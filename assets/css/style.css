@@ -576,11 +576,11 @@ card-min
 }
 .card-a2:hover .card-title2 {
     opacity: 1;
-    transform: translate(31px, 100px);
+    transform: translate(29px, 100px);
 }
 .card-a3:hover .card-title3 {
     opacity: 1;
-    transform: translate(32px, 100px);
+    transform: translate(28px, 100px);
 }
 .card-a4:hover .card-title4 {
     opacity: 1;
