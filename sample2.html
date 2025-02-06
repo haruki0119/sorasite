@@ -24,11 +24,11 @@
                 <div class="card-set">
                     <div class="card-left">
                         <strong>Before</strong>
-                        <img class="card-before" src="./assets/images/before2.png" alt="">
+                        <img class="card-before" src="./assets/images/before2.png" alt="before">
                     </div>
                     <div class="card-right">
                         <strong>After</strong>
-                        <img class="card-after" src="./assets/images/after2.png" alt="">
+                        <img class="card-after" src="./assets/images/after2.png" alt="after">
                     </div>
                 </div>
                 <div class="card-text">
@@ -47,28 +47,28 @@
                 <a href="./sample4.html" class="select-button"></a>
             </div>
             <div class="card-set">
-                <a class="card-a card-a1" href="">
+                <a class="card-a card-a1" href="sample1.html">
                     <div class="card-min">
                         <div class="card-sample">Sample1</div>
                         <img src="./assets/images/after1.jpg" alt="">
                         <div class="card-title card-title1">事務所天井の改装</div>
                     </div>
                 </a>
-                <a class="card-a card-a3" href="">
+                <a class="card-a card-a3" href="sample3.html">
                     <div class="card-min">
                         <div class="card-sample">Sample3</div>
                         <img src="./assets/images/after3.png" alt="">
                         <div class="card-title card-title3">はしごの設置</div>
                     </div>
                 </a>
-                <a class="card-a card-a4" href="">
+                <a class="card-a card-a4" href="sample4.html">
                     <div class="card-min">
                         <div class="card-sample">Sample4</div>
                         <img src="./assets/images/after4.jpg" alt="">
                         <div class="card-title card-title4">倉庫の改装</div>
                     </div>
                 </a>
-                <a class="card-a" href="">
+                <a class="card-a" href="#">
                     <div class="card-min">
                         <img src="https://www.dummyimage.com/600x400/000/fff" alt="">
                     </div>
@@ -99,6 +99,15 @@
                 <small>Copyright &copy;合同会社素楽</small>
             </div>
         </footer>
+        <script src="./assets/js/vanilla-tilt.js"></script>
+        <script type="text/javascript">
+            VanillaTilt.init(document.querySelectorAll(".card-min"), {
+                max: 25,
+                speed: 400,
+                glare: true,
+                "max-glare": 0.5,
+            });
+        </script>
     </main>
 </body>
 </html>
