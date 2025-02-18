@@ -1,9 +1,5 @@
 @charset "utf-8";
 
-/* * {
-    border: red 1px solid;
-} */
-
 html, body {
     padding: 0;
     margin: 0;
@@ -105,7 +101,14 @@ main
     z-index: -10;
     position: fixed;
 }
-/* 文字が横幅を変えても対応するようにへんこうする */
+@media screen and (max-width: 768px) {
+    .hero_inner h1 {
+        font-size: 40px;
+    }
+    .hero_inner p {
+        font-size: 20px;
+    }
+}
 .hero video {
     position: absolute;
     z-index: 1;
@@ -139,6 +142,11 @@ section
     left: 5px;
     transform: translateY(-20%);
     z-index: -1;
+}
+@media screen and (max-width: 768px) {
+    .heading {
+        font-size: 150px;
+    }
 }
 .heading2 {
     font-family: "Dancing Script", "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", cursive;
@@ -181,10 +189,24 @@ section
     height: auto;
     object-fit: cover;
 }
+@media screen and (max-width: 768px) {
+    .column {
+        display: block;
+    }
+    .text-left, .concept_img {
+        width: 100%;
+    }
+}
 .takeaki_img {
     height: 300px;
     width: 35%;
     margin: -40px auto 0px 70px;
+}
+@media screen and (max-width: 768px) {
+    .takeaki_img {
+        width: 100%;
+        margin: 30px 0 0 0;
+    }
 }
 .sentence {
     margin-left: 10%;
@@ -204,7 +226,8 @@ sample
     display: flex;
     position: absolute;
     margin: 3% 10%;
-    object-fit: cover;justify-content: space-between;
+    object-fit: cover;
+    justify-content: space-between;
     height: 15vw;
     width: calc(100vw - 17px - 20%);
 }
@@ -255,6 +278,34 @@ sample
     bottom: 0;
 }
 
+@media screen and (max-width: 768px) {
+    .after, .hover-img, .sample-pair:hover img.default-img, .sample-pair:hover .before {
+        opacity: 1;
+    }
+    .sample-list {
+        height: 1000px;
+    }
+    .sample-set {
+        display: block;
+    }
+    .sample-pair {
+        display: flex;
+        width: 100%;
+        margin: 15px 0;
+    }
+    .default-img, .hover-img {
+        position: relative;
+        width: 50%;
+        overflow: hidden;
+    }
+    .after {
+        left: 50%;
+    }
+    .sample-set2 {
+        bottom: 405px;
+    }
+}
+
 /*
 profile
 */
@@ -303,6 +354,12 @@ company
     backdrop-filter: blur(5px);
     overflow: hidden;
 }
+@media screen and (max-width: 768px) {
+    .company-text {
+        margin-top: 65px;
+        margin-left: 13%;
+    }
+}
 .company-text dd, .company-about {
     color: #fff;
     text-shadow: 5px 5px 5px #333;
@@ -346,6 +403,11 @@ textarea {
     padding: 10px;
     border: 1px #ccc solid;
     min-width: 500px;
+}
+@media screen and (max-width: 768px) {
+    input, textarea {
+        min-width: 300px;
+    }
 }
 label, input, textarea, button {
     cursor: pointer;
@@ -400,11 +462,17 @@ footer
 footer {
     background-color: #333;
     z-index: 1;
+    border-top: #333 solid 1px;
 }
 .footer-map {
     width: 60%;
     margin-bottom: 15px;
     margin-top: 30px;
+}
+@media screen and (max-width: 768px) {
+    .footer-map {
+        width: 100%;
+    }
 }
 .footer-map iframe {
     width: 100%;
@@ -416,6 +484,11 @@ footer {
     width: 40%;
     margin-top: 50px;
 }
+@media screen and (max-width: 768px) {
+    .right-box {
+        width: 100%;
+    }
+}
 .right-box a {
     color: #fff;
 }
@@ -424,6 +497,7 @@ footer {
     height: 50px;
     border-radius: 50%;
     margin: 0 20px;
+    margin-bottom: 20px;
 }
 .sora {
     font-size: 20px;
@@ -586,3 +660,42 @@ card-min
     opacity: 1;
     transform: translate(39px, 100px);
 }
+@media screen and (max-width: 768px) {
+    .card-sample {
+        transform: translateY(-50px);
+        font-size: 15px;
+        left: 15px;
+    }
+    .card-title {
+        font-size: 15px;
+        transform: translate(100px ,50px);
+    }
+    .card-title1 {
+        font-size: 11.5px;
+    }
+    .card-min  {
+        height: 130px;
+    }
+    .card-min img {
+        height: 50px;
+    }
+    .card-a1:hover .card-title1 {
+        opacity: 1;
+        transform: translate(2px, 50px);
+    }
+    .card-a2:hover .card-title2 {
+        opacity: 1;
+        transform: translate(3px, 50px);
+    }
+    .card-a3:hover .card-title3 {
+        opacity: 1;
+        transform: translate(12px, 50px);
+    }
+    .card-a4:hover .card-title4 {
+        opacity: 1;
+        transform: translate(39px, 50px);
+    }
+}
+
+
+/* プライバシーポリシーのボタンのデザイン変更と、sample-cardの文字が中央にくるように変更 */
