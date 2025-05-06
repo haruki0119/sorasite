@@ -31,16 +31,28 @@ header
 }
 
 .logo {
-    font-size: 24px;
+    font-size: 30px;
     font-weight: bold;
     letter-spacing: -0.04em;
     text-decoration: none;
     margin-left: 12px;
-    color: rgb(253, 214, 140);
+    color: rgb(173, 121, 54);
     font-family: "Dancing Script", "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", cursive;
 }
 .logo span {
-    color: rgb(173, 121, 54);
+    color: rgb(253, 214, 140);
+    font-size: 20px;
+}
+.logo-back {
+    font-family: "Dancing Script", "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", cursive;
+    font-size: 65px;
+    font-weight: bold;
+    color: rgb(156, 76, 22);
+    opacity: 0.15;
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    z-index: -1;
 }
 .header_menu {
     right: 0;
@@ -73,17 +85,6 @@ header
     .menu li a:hover {
         padding: 3px 15px;
     }
-}
-.tel {
-    position: absolute;
-    z-index: 5;
-    top: 40px;
-    left: 28px;
-}
-.tel a {
-    color: #333;
-    text-decoration: none;
-    font-size: 20px;
 }
 
 /*
