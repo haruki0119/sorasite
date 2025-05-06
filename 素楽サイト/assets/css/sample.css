@@ -1,0 +1,230 @@
+/*
+blog
+*/
+.blog-page {
+    text-align: center;
+    margin: 50px;
+}
+.top-button {
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(160, 94, 51);
+    font-weight: bold;
+    font-size: 20px;
+    padding: 20px 50px;
+    border-radius: 35px;
+}
+
+.card {
+    border: #ccc 1px solid;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+.card > h4 {
+    font-size: 30px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+.card-set {
+    display: flex;
+}
+.card-before, .card-after {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+}
+.card-left, .card-right {
+    width: 50%;
+    text-align: center;
+    margin: 0 20px;
+}
+.card-left strong, .card-right strong {
+    font-size: 25px;
+}
+.card-text {
+    margin: 0 20px;
+}
+
+/*
+select-button
+*/
+.select-list {
+    display: flex;
+    justify-content: center;
+}
+.select-button {
+    padding: 8px;
+    border-radius: 50%;
+    border: #ccc 1px solid;
+    margin: 0 15px;
+    transition: background-color .25s;
+}
+.select-button:hover {
+    background-color: #bbb;
+}
+.self-button {
+    padding: 8px;
+    border-radius: 50%;
+    border: #aaa 1px solid;
+    margin: 0 15px;
+    position: relative;
+}
+.self-circle {
+    position: absolute;
+    padding: 6px;
+    background-color: #aaa;
+    border-radius: 50%;
+    transform: translateY(3px);
+}
+.none-button {
+    padding: 9px;
+    margin: 0 15px;
+}
+
+/*
+card-min
+*/
+.card-set {
+    margin-top: 25px;
+}
+.card-a {
+    width: 22%;
+    margin-left: 4%;
+    margin-bottom: 40px;
+    text-decoration: none;
+}
+.card-min {
+    border: #ccc 1px solid;
+    border-radius: 5px;
+    height: 240px;
+}
+.card-min img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    margin-top: 20px;
+}
+.card-sample {
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+.card-title {
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+.card-title1 {
+    margin-top: 13px;
+    font-size: 17px;
+}
+@media screen and (max-width: 768px) {
+    .card-sample {
+        font-size: 15px;
+        left: 15px;
+        margin-top: 5px;
+    }
+    .card-min img {
+        height: 60px;
+        margin-top: 5px;
+    }
+    .card-title {
+        font-size: 14.5px;
+    }
+    .card-title1 {
+        font-size: 11px;
+    }
+    .card-min  {
+        height: 130px;
+    }
+}
+
+/*
+section
+*/
+.section {
+    margin: 0 5%;
+    position: relative;
+}
+.section h2 {
+    font-size: 40px;
+}
+.section h3 {
+    font-size: 27px;
+    margin-left: 20px;
+}
+h4 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 50px;
+}
+.title_pop {
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: rgb(156, 76, 22);
+}
+.heading {
+    font-family: "Dancing Script", "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", cursive;
+    font-size: 160px;
+    font-weight: bold;
+    color: rgb(156, 76, 22);
+    opacity: 0.15;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(-20%);
+    z-index: -1;
+}
+@media screen and (max-width: 768px) {
+    .heading {
+        font-size: 120px;
+    }
+}
+
+/*
+footer
+*/
+footer {
+    background-color: #333;
+    z-index: 1;
+    border-top: #333 solid 1px;
+}
+.footer-p {
+    color: #fff;
+    text-align: center;
+    margin-top: 5px;
+}
+.sns {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.sns-title {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+.sora {
+    font-size: 25px;
+    text-align: center;
+    color: #fff;
+}
+address {
+    text-align: center;
+    color: #fff;
+}
+hr {
+    margin-top: 15px;
+}
+small {
+    color: #757575;
+}
+.copy {
+    text-align: center;
+}
