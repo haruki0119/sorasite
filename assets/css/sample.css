@@ -31,7 +31,8 @@ blog
 }
 .card-before, .card-after {
     width: 100%;
-    aspect-ratio: 3 / 2;
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
 }
 .card-left, .card-right {
     width: 50%;
@@ -96,13 +97,13 @@ card-min
 .card-min {
     border: #ccc 1px solid;
     border-radius: 5px;
-    height: 240px;
+    height: 300px;
 }
 .card-min img {
     width: 100%;
-    height: 120px;
+    height: 200px;
     object-fit: cover;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 .card-sample {
     font-size: 20px;
@@ -130,17 +131,18 @@ card-min
         margin-top: 5px;
     }
     .card-min img {
-        height: 60px;
+        height: 150px;
         margin-top: 5px;
     }
     .card-title {
-        font-size: 14.5px;
+        font-size: 13px;
+        margin-top: 0;
     }
     .card-title1 {
-        font-size: 11px;
+        font-size: 10px;
     }
     .card-min  {
-        height: 130px;
+        height: 210px;
     }
 }
 

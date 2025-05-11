@@ -226,7 +226,7 @@ sample
 .sample-list {
     background-color: #eee;
     position: relative;
-    height: 41vw;
+    height: 77vw;
     width: 100%;
     margin: 50px 0;
 }
@@ -236,7 +236,7 @@ sample
     margin: 3% 10%;
     object-fit: cover;
     justify-content: space-between;
-    height: 15vw;
+    height: 33vw;
     width: calc(100vw - 17px - 20%);
 }
 .sample-pair {
@@ -264,7 +264,7 @@ sample
     width: 100%;
     height: 100%;
     z-index: 1;
-    aspect-ratio: 3 / 2;
+    aspect-ratio: 2 / 3;
     transition: 0.5s;
     object-fit: cover;
 }
@@ -289,12 +289,12 @@ sample
     display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 500px) {
     .after, .hover-img, .sample-pair:hover img.default-img, .sample-pair:hover .before {
         opacity: 1;
     }
     .sample-list {
-        height: 180vw;
+        height: 373vw;
     }
     .sample-set {
         display: block;
