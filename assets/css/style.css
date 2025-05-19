@@ -294,7 +294,7 @@ sample
         opacity: 1;
     }
     .sample-list {
-        height: 373vw;
+        height: 373fvw;
     }
     .sample-set {
         display: block;
@@ -438,6 +438,28 @@ label, input, textarea, button {
 }
 .button:hover {
     box-shadow: 0 0 0 #bbb;
+}
+
+.topics-button {
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    background-color: rgb(160, 94, 51);
+    padding: 15px 60px;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 5px 5px 0 #bbb;
+    transition: box-shadow .25s;
+    border: rgb(152, 76, 26);
+    margin-top: 15px;
+}
+.topics-button:hover {
+    box-shadow: 0 0 0 #bbb;
+}
+.width {
+    width: 100%;
+    text-align: center;
 }
 
 .scroll {
