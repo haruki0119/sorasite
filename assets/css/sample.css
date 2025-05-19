@@ -94,6 +94,9 @@ card-min
     margin-bottom: 40px;
     text-decoration: none;
 }
+.card-notLeft {
+    margin-left: 0;
+}
 .card-min {
     border: #ccc 1px solid;
     border-radius: 5px;
@@ -185,6 +188,48 @@ h4 {
 @media screen and (max-width: 768px) {
     .heading {
         font-size: 120px;
+    }
+}
+
+/*
+topics
+*/
+
+.card-topic {
+    width: 80%;
+    margin: 0 10%;
+}
+.card-topics {
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+.topic-min {
+    border: #ccc 1px solid;
+    border-radius: 5px;
+    height: 200px;
+}
+.topic-min img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    margin-top: 10px;
+}
+@media screen and (max-width: 768px) {
+    .card-topics {
+        font-size: 12px;
+        left: 15px;
+        margin-top: 3px;
+    }
+    .topic-min img {
+        height: 65px;
+        margin-top: 5px;
+    }
+    .topic-min  {
+        height: 120px;
     }
 }
 
