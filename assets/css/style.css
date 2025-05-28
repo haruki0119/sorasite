@@ -76,6 +76,9 @@ header
         font-size: 12px;
         padding: 3px 12px;
     }
+    .header_menu {
+        top: -5px;
+    }
 }
 @media screen and (max-width: 500px) {
     .menu li a {
@@ -84,6 +87,9 @@ header
     }
     .menu li a:hover {
         padding: 3px 15px;
+    }
+    .header_menu {
+        top: -10px;
     }
 }
 
@@ -96,30 +102,39 @@ main
     position: relative;
     overflow: hidden;
 }
-.hero_inner h1,.hero_inner p {
+.hero_inner h1 {
     position: absolute;
     z-index: 3;
     top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 60px;
+    font-size: 50px;
     color: #333;
     font-weight: bold;
     display: block;
     text-align: center;
     width: 100%;
 }
-.hero_inner p {
-    font-size: 40px;
-    top: 55%;
-    text-shadow: #fff 5px 5px 20px;
+.alart {
+    position: absolute;
+    bottom: 0;
+    z-index: 5;
+    color: red;
+    width: 50%;
+    right: 0;
 }
 @media screen and (max-width: 768px) {
     .hero_inner h1 {
         font-size: 40px;
     }
-    .hero_inner p {
+}
+@media screen and (max-width: 580px) {
+    .hero_inner h1 {
         font-size: 20px;
+        margin-top: 25px;
+    }
+    .alart {
+        font-size: 8.5px;
     }
 }
 .hero img {
@@ -294,7 +309,7 @@ sample
         opacity: 1;
     }
     .sample-list {
-        height: 373fvw;
+        height: 373vw;
     }
     .sample-set {
         display: block;
@@ -439,7 +454,6 @@ label, input, textarea, button {
 .button:hover {
     box-shadow: 0 0 0 #bbb;
 }
-
 .topics-button {
     display: inline-block;
     text-align: center;
@@ -540,6 +554,47 @@ small {
 }
 .copy {
     text-align: center;
+}
+
+/*
+smart-phone
+*/
+
+@media screen and (max-width: 414px) {
+    .logo {
+        font-size: 18px;
+    }
+    .logo span {
+        font-size: 15px;
+    }
+    .logo-back {
+        font-size: 40px;
+        top: 0;
+    }
+    .heading {
+        font-size: 100px;
+    }
+    .heading2 {
+        font-size: 65px;
+    }
+    .title_pop {
+        margin-bottom: -20px;
+    }
+    .section h3 {
+        font-size: 20px;
+    }
+    .text-big {
+        font-size: 12px;
+    }
+    .about-homepage dd {
+        font-size: 12px;
+    }
+    .text-left {
+        font-size: 12px;
+    }
+    .form-table tr th label {
+        font-size: 12px;
+    }
 }
 
 
