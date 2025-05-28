@@ -397,6 +397,14 @@ company
     aspect-ratio: 3 / 2;
     height: 550px;
 }
+@media screen and (max-width: 414px) {
+    .company-text {
+        margin-left: 6%;
+    }
+    .company-img {
+        height: 500px;
+    }
+}
 
 h4 {
     text-align: center;
