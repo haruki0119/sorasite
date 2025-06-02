@@ -68,49 +68,6 @@ select-button
     margin-left: 8px;
     font-weight: bold;
 }
-.topics-set{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin: 15px;
-    padding: 15px;
-}
-.topic-min{
-    font-size: 20px;
-    border: #ccc 1px solid;
-    border-radius: 5px;
-    margin: 10px;
-    padding: 10px;   
-} 
-.topic-min img {
-    width: 100%;
-    height: 100px;
-    object-fit: cover;
-    margin-top: 10px;
-}
-.campaign {
-    display: inline-block;
-    text-align: center;
-    font-size: 25px;
-    margin-top: 30px;
-    margin-bottom: 75px;
-    color: #637ee0;
-}
-@media screen and (max-width: 768px) {
-    .topics-set {
-        font-size: 12px;
-        left: 15px;
-        margin-top: 3px;
-    }
-    .topic-min img {
-        height: 65px;
-        margin-top: 5px;
-    }
-    .topic-min  {
-        height: 120px;
-    }
-}
-
 
 /*
 section

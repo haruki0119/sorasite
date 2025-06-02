@@ -1,0 +1,297 @@
+/*
+blog
+*/
+.blog-page {
+    text-align: center;
+    margin: 50px;
+}
+.top-button {
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(160, 94, 51);
+    font-weight: bold;
+    font-size: 20px;
+    padding: 20px 50px;
+    border-radius: 35px;
+}
+
+/*
+blog
+*/
+.top {
+    margin: 10px 1%;
+    text-decoration: none;
+    color: #333;
+    display: block;
+    width: 23%;
+}
+.blog-flex {
+    display: flex;
+    width: 100vw - 15px;
+    justify-content: space-around;
+    height: auto;
+    flex-wrap: wrap;
+}
+.blog-card {
+    border-radius: 5px;
+    border: #ddd 1px solid;
+    transition: background-color .5s;
+    background-color: #fff;
+}
+.blog-card:hover {
+    background-color: #ddd;
+}
+.blog-card > img {
+    width: 100%;
+    aspect-ratio: 2 / 1;
+    object-fit: cover;
+}
+.blog-info {
+    height: 120px;
+}
+.blog-card > time {
+    margin-left: 5px;
+}
+.blog-headline {
+    margin: 0;
+    font-size: 20px;
+    margin: 0 5px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.blog-text {
+    font-size: 12px;
+    margin: 5px 5px;
+    height: 34px;
+    overflow: hidden;
+}
+.avator {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+    align-items: center;
+    margin-top: 0;
+}
+.avator-img {
+    margin: 5px;
+}
+.avator-img img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.avator-name {
+    font-weight: bold;
+}
+@media screen and (max-width: 414px) {
+    .top {
+        width: 45%;
+    }
+    .blog-page {
+        text-align: center;
+        margin: 30px;
+    }
+    .top-button {
+        font-size: 18px;
+        padding: 16px 40px;
+        border-radius: 28px;
+    }
+}
+
+/*
+select-button
+*/
+.select-list {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+.select-button {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    text-decoration: none;
+    background-color: rgb(160, 94, 51);
+}
+.select-text {
+    color: #fff;
+    margin-top: 25px;
+    margin-left: 23px;
+    font-weight: bold;
+}
+
+/*
+section
+*/
+.section {
+    margin: 0 5%;
+    position: relative;
+}
+.section h2 {
+    font-size: 40px;
+}
+.section h3 {
+    font-size: 27px;
+    margin-left: 20px;
+}
+h4 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 50px;
+}
+.title_pop {
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: rgb(156, 76, 22);
+}
+.heading {
+    font-family: "Dancing Script", "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", cursive;
+    font-size: 160px;
+    font-weight: bold;
+    color: rgb(156, 76, 22);
+    opacity: 0.15;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(-20%);
+    z-index: -1;
+}
+@media screen and (max-width: 768px) {
+    .heading {
+        font-size: 120px;
+    }
+}
+
+/*
+blog-one
+*/
+.blog-one {
+    margin-bottom: 15px;
+    width: 100vw - 15px;
+    background-color: #ddd;
+    padding: 30px 0;
+}
+.blog-card-top {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.blog-card-one:hover {
+    background-color: #fff;
+}
+.blog-info-one {
+    height: auto;
+}
+.time-one {
+    margin-left: 10px;
+    font-size: 20px;
+}
+.blog-headline-one {
+    margin: 0;
+    font-size: 30px;
+    margin: 0 10px;
+}
+.blog-text-one {
+    font-size: 18px;
+    margin: 10px;
+}
+.avator-one {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+    align-items: center;
+    margin-top: 0;
+}
+.avator-img-one {
+    margin: 5px;
+    margin-left: 20px;
+}
+.avator-img-one img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.avator-name-one {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 5px;
+    margin-bottom: 10px;
+}
+
+/*
+blog-to-you
+*/
+.blog-to-you {
+    margin: 15px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/*
+footer
+*/
+footer {
+    background-color: #333;
+    z-index: 1;
+    border-top: #333 solid 1px;
+}
+.footer-p {
+    color: #fff;
+    text-align: center;
+    margin-top: 5px;
+}
+.sns {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.sns-title {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+.sora {
+    font-size: 25px;
+    text-align: center;
+    color: #fff;
+}
+address {
+    text-align: center;
+    color: #fff;
+}
+hr {
+    margin-top: 15px;
+}
+small {
+    color: #757575;
+}
+.copy {
+    text-align: center;
+}
+
+/*
+smart-phone
+*/
+
+@media screen and (max-width: 414px) {
+    .heading {
+        font-size: 100px;
+    }
+    .title_pop {
+        margin-bottom: -20px;
+    }
+    .card > h4 {
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+    .card-left > strong, .card-right > strong {
+        font-size: 18px;
+    }
+    .card-text {
+        font-size: 12px;
+    }
+}

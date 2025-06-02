@@ -398,6 +398,22 @@ Blog
 .avator-name {
     font-weight: bold;
 }
+.blog-button {
+    text-align: center;
+}
+@media screen and (max-width: 768px) {
+    .blog-card {
+        width: 42vw;
+    }
+    .blog-card > img {
+        height: 21vw;
+    }
+}
+@media screen and (max-width: 414px) {
+    .blog-headline {
+        font-size: 15px;
+    }
+}
 
 /*
 profile
